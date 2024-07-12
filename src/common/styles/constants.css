@@ -1,15 +1,13 @@
 :root {
-  --color-black: #2B2B2B;
-  --color-orange: #f47d39;
-  --color-orange-l: #ffb455;
-  --color-blue: #569fd6;
-  --color-blue-xl: #D6EDFF;
-  --color-yellow: #ffb455;
-  --color-white: white;
+  --color-black: #292D32;
+  --color-gray: #838383;
+  --color-gray-l: #9197B3;
+  --color-green: #16C098;
+  --color-deep-green: #008767;
+  --color-pink: #FFC5C5;
+  --color-red: #DF0404; 
+  --color-blue: #5932EA;      
 
-  --color-yellow-xl: #ffe4c1;
-  --color-yellow-l: #ffcf90;
-  --color-grey-l: #b3a3a3a3;
 
   --app-width: 1040px;
 

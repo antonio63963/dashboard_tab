@@ -1,0 +1,36 @@
+.sidebar {
+  padding: 36px 28px;
+  width: 306px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .sidebar__header {
+    margin-bottom: 54px;
+  }
+
+  .sidebar__topics-item {
+    margin-bottom: 15px;
+  }
+
+  .user-tile {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+
+    .user-tile__info {
+      margin-left: 12px;
+      display: flex;
+      flex-direction: column;
+
+      .user-tile__name {
+        font-size: 14px;
+      }
+      .user-tile__job {
+        font-size: 12px;
+        font-weight: 400;
+        color: var(--color-gray-l);
+      }
+    }
+  }
+}

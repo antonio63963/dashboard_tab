@@ -1,5 +1,9 @@
-
+@import './constants.css';
 @import './fonts.css';
+
+@import '../ui/logo/logo.css';
+@import '../ui/sidebar/sidebar.css';
+@import '../ui/sidebar-item/sidebar-item.css';
 
 * {
   margin: 0;
@@ -9,5 +13,14 @@
 
 body {
   font-size: calc(1vw / 14.4 * 9);
+  font-weight: 500;
   font-family: 'Poppins';
+}
+
+main {
+  height: 100vh;
+}
+
+ul {
+  
 }

@@ -1,0 +1,9 @@
+mixin sidebar-item(options)
+  -const {iconPath, title, isNotPressable} = options || {};
+  -const pressable = isNotPressable ? "isNotPressable" : '';
+  li.sidebar-item(class!= attributes.class, class= pressable) 
+    .sedebar-item__img-wrapper
+      img.sidebar-item__icon.sidebar-icon__lead-icon(src= require(`./assets/img/${iconPath}`))
+    span.sidebar-item__title= title 
+    if !isNotPressable
+      img.sidebar-item__icon(src= require('./assets/img/chevron-right.png'))

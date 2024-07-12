@@ -1,0 +1,22 @@
+include ../logo/logo.pug
+include ../sidebar-item/sidebar-item.pug
+
+mixin sidebar-app 
+  - const items = [{title: 'Dashboard', iconPath: 'dashboard.png', isNotPressable: true}, {title: 'Product', iconPath: 'product.png'}, {title: 'Customers', iconPath: 'customers.png'}, {title: 'Income', iconPath: 'income.png'}, {title: 'Promote', iconPath: 'promote.png'}, {title: 'Help', iconPath: 'help.png'},]
+
+  aside.sidebar
+    .sidebar__header 
+      +logo
+    ul.sidebar__topics
+      each val in items
+        +sidebar-item({
+          title: val.title, 
+          iconPath: val.iconPath,
+          isNotPressable: val.isNotPressable,
+          })(class="sidebar__topics-item")
+    .user-tile
+      img.user-tile__avatar(src= require('./assets/img/user-avatar.jpg'))
+      .user-tile__info 
+        .user-tile__name Evano 
+        .user-tile__job Project Manager
+
