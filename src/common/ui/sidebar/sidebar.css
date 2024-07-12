@@ -1,16 +1,18 @@
 .sidebar {
   padding: 36px 28px;
   width: 306px;
+  min-width: 306px;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  background-color: var(--color-white);
 
   .sidebar__header {
     margin-bottom: 54px;
   }
 
   .sidebar__topics-item {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
   }
 
   .user-tile {

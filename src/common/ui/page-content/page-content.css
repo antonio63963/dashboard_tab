@@ -1,0 +1,11 @@
+.page-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+  padding: 41px clamp(20px, 7.1rem, 71px);
+
+  .page-content__greating {
+    margin-bottom: 51px;
+  }
+}

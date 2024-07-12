@@ -10,11 +10,11 @@
     .logo__text {
       margin-top: 2px;
       margin-left: 8px;
-      margin-right: 6px;
+      margin-right: 4px;
       font-size: 26px;
       font-weight: 600;
       line-height: 26px;
-      letter-spacing: -1%;
+      letter-spacing: calc(26px / 100);
     }
     .logo__subtext {
       color: var(--color-gray);

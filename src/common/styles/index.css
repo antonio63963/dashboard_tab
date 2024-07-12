@@ -3,24 +3,43 @@
 
 @import '../ui/logo/logo.css';
 @import '../ui/sidebar/sidebar.css';
+@import '../ui/page-content/page-content.css';
 @import '../ui/sidebar-item/sidebar-item.css';
+@import '../ui/table-app/table-app.css';
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
+html {
   font-size: calc(1vw / 14.4 * 9);
   font-weight: 500;
   font-family: 'Poppins';
+
+}
+body {
+  font-size: 14px;
+  letter-spacing: calc(-14px /100);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 main {
+  display: flex;
   height: 100vh;
+  width: var(--app-width);
+  max-width: var(--app-width);
+  background-color: var(--color-bg);
 }
 
-ul {
-  
+h1 {
+  font-weight: 500;
+  font-size: 24px;
+}
+h2 {
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: calc(-22px / 100);
 }

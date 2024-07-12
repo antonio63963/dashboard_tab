@@ -2,18 +2,20 @@
   --color-black: #292D32;
   --color-gray: #838383;
   --color-gray-l: #9197B3;
+  --color-gray-xl: #EEEEEE;
   --color-green: #16C098;
   --color-deep-green: #008767;
   --color-pink: #FFC5C5;
   --color-red: #DF0404; 
   --color-blue: #5932EA;      
+  --color-white: #fff;
+  --color-bg: #FAFBFF;
 
-
-  --app-width: 1040px;
+  --app-width: 1440px;
 
   /* brakepoints */
   --mobileXs: 576px;
   --mobile: 768px;
   --tablet: 992px;
-  --lg: 1040px;
+  --lg: 1440px;
 }

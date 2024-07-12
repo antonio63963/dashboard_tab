@@ -10,6 +10,7 @@
   
   .sidebar-item__img-wrapper {
     width: 24px;
+    height: 24px;
   }
   .sidebar-item__lead-icon {
     object-fit: contain;
@@ -18,8 +19,10 @@
 
   .sidebar-item__title {
     font-size: 14px;
+    line-height: 14px;
     color: var(--color-gray-l);
     margin-left: 14px;
+    letter-spacing: calc(-14px/100);
     margin-right: auto;
   }
   svg.svg-icon {

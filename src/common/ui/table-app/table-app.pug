@@ -1,0 +1,23 @@
+mixin table-app(options) 
+  -const {title, subtitle, tabHeaders, rowsArr} = options || {};
+  .table-card 
+    .table-card__header 
+      h2.table-card__title= title 
+      p.table-card__subtitle= subtitle 
+
+    table(class!= attributes.class)
+      thead 
+        tr
+          each val in tabHeaders 
+            th= val
+      tbody 
+        each row in rowsArr 
+          tr 
+            - const values = Object.values(row)
+            each col in values 
+              if typeof col == 'boolean'
+                td 
+                  button.table-app__button(class=col ? 'active' : null)= col
+
+              else
+                td= col
