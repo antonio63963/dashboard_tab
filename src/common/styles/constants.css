@@ -4,12 +4,15 @@
   --color-gray-l: #9197B3;
   --color-gray-xl: #EEEEEE;
   --color-green: #16C098;
+  --color-green-light: rgba(22, 192, 152, .4);
   --color-deep-green: #008767;
   --color-pink: #FFC5C5;
   --color-red: #DF0404; 
   --color-blue: #5932EA;      
   --color-white: #fff;
   --color-bg: #FAFBFF;
+
+  --shadow: 0 10px 60px 0 rgba(226, 236, 249, .5);
 
   --app-width: 1440px;
 

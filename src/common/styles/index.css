@@ -6,6 +6,7 @@
 @import '../ui/page-content/page-content.css';
 @import '../ui/sidebar-item/sidebar-item.css';
 @import '../ui/table-app/table-app.css';
+@import '../ui/textField/textField.css';
 
 * {
   margin: 0;
@@ -42,4 +43,9 @@ h2 {
   font-weight: 600;
   font-size: 22px;
   letter-spacing: calc(-22px / 100);
+}
+
+::placeholder {
+  color: #B5B7C0;
+  font-size: 12px;
 }

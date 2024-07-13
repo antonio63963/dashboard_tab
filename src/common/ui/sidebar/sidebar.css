@@ -2,7 +2,7 @@
   padding: 36px 28px;
   width: 306px;
   min-width: 306px;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: var(--color-white);

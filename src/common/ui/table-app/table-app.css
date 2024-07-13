@@ -1,10 +1,21 @@
 .table-card {
+  max-width: 968px;
   padding: 30px 0 41px 0;
   background-color: var(--color-white);
   border-radius: 30px;
+  box-shadow: var(--shadow);
 
   .table-card__header {
-    margin: 0 38px 40px 38px;
+    margin: 0 0 27px 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .table-card__header__col {
+      display: flex;
+      flex-direction: column;
+    }
 
     .table-card__title {
       margin-bottom: 7px;
@@ -12,23 +23,70 @@
     .table-card__subtitle {
       color: var(--color-deep-green);
     }
+
+    .table-card__input {
+      margin-top: 4px;
+      margin-right: 53px;
+    }
+  }
+  .table-card__content {
+    width: 100%;
+   
+    display: flex;
+
+    .table-card__content-padding {
+      height: 49.5px;
+      width: clamp(20px, 4rem, 40px);
+      border: 1px solid var(--color-gray-xl);
+      border-width: 0 0 1px 0;
+    }
   }
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
+
+  .table-empty {
+    width: clamp(20px, 3.8rem, 38px);
+    padding: 0;
+
+  }
+ 
 }
 th {
-  color: var(--color-gray-l)
-}
-th, td {
-  padding: 24px;
+  color: var(--color-gray-l);
+  padding: 14px 0;
   text-align: start;
+}
+ td {
+  height: 69px;
+  /* padding: 24px 0; */
+  text-align: start;
+  font-weight: 600;
+  line-height: 21px;
 }
 
 tr {
   border: 1px solid var(--color-gray-xl);
   border-width: 0 0 1px 0;
 
+}
+.table-app__button {
+  padding: 4px;
+  border-radius: 4px;
+  width: 80px;
+  background: var(--color-pink);
+  color: var(--color-red);
+  border: 1px solid var(--color-red);
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+.table-app__button.active {
+  background: var(--color-green-light);
+  color: var(--color-deep-green);
+  border-color: var(--color-deep-green);
+}
+.table-app__button:hover {
+  opacity: .5;
 }

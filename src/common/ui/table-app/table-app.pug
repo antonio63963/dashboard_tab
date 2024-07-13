@@ -1,23 +1,34 @@
+include ../textField/textField.pug
+
 mixin table-app(options) 
   -const {title, subtitle, tabHeaders, rowsArr} = options || {};
   .table-card 
     .table-card__header 
-      h2.table-card__title= title 
-      p.table-card__subtitle= subtitle 
+      .table-card__header__col
+        h2.table-card__title= title 
+        p.table-card__subtitle= subtitle 
 
-    table(class!= attributes.class)
-      thead 
-        tr
-          each val in tabHeaders 
-            th= val
-      tbody 
-        each row in rowsArr 
-          tr 
-            - const values = Object.values(row)
-            each col in values 
-              if typeof col == 'boolean'
-                td 
-                  button.table-app__button(class=col ? 'active' : null)= col
+      +text-field({
+        iconPath: 'search.svg',
+        placeholder: 'Search',
+      })(class="table-card__input")
+    .table-card__content
+      .table-card__content-padding
+      table(class!= attributes.class)
+        thead 
+          tr
+            each val in tabHeaders 
+              th= val
+        tbody 
+          each row in rowsArr 
+            tr 
+              - const values = Object.values(row)
+              each col in values 
+                -const buttonTitle = col ? 'Active' : 'Inactive';
+                if typeof col == 'boolean'
+                  td 
+                    button.table-app__button(class=col ? 'active' : null)= buttonTitle
 
-              else
-                td= col
+                else
+                  td= col
+      .table-card__content-padding

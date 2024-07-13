@@ -1,0 +1,7 @@
+mixin text-field(options)
+  -const {iconPath, placeholder} = options || {};
+
+  .text-field(class!= attributes.class)
+    img.text-field__prefix(src= require(`./assets/svg/${iconPath}`))
+    input.text-field__input(placeholder= placeholder)
+    

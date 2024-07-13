@@ -1,0 +1,21 @@
+.text-field {
+  padding: 7px 8px;
+  height: 38px;
+  border-radius: 10px;
+  background-color: #F9FBFF;
+  display: flex;
+  align-items: center;
+
+  .text-field__prefix {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+  .text-field__input {
+    height: 100%;
+    border: none;
+    outline: none;
+  }
+
+}
