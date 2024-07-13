@@ -1,5 +1,6 @@
 @import "./constants.css";
 @import "./fonts.css";
+@import "./scrollbar.css";
 
 @import "../ui/logo/logo.css";
 @import "../ui/sidebar/sidebar.css";

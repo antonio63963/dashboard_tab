@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://antonio63963.github.io/dashboard_tab/",
   "scripts": {
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production",
-    "serve": "webpack serve --open --mode development"
+    "serve": "webpack serve --open --mode development",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "keywords": [],
   "author": "",
@@ -31,5 +34,8 @@
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
