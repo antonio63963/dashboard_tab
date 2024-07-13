@@ -1,5 +1,8 @@
 mixin page-content(options) 
   -const {name} = options || {};
   section.page-content 
-    h1.page-content__greating Hello #{name} 👋🏼
+    .page-content__top
+      .page-content__sandwich
+        span
+      h1.page-content__greating Hello #{name} 👋🏼
     block 

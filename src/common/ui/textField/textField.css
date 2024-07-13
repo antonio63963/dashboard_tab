@@ -5,14 +5,15 @@
   background-color: #F9FBFF;
   display: flex;
   align-items: center;
-
+  
   .text-field__prefix {
     width: 24px;
     height: 24px;
     margin-right: 8px;
   }
-
+  
   .text-field__input {
+    background-color: #F9FBFF;
     height: 100%;
     border: none;
     outline: none;

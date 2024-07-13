@@ -1,7 +1,8 @@
 include ../textField/textField.pug
+include ../pagination/pagination.pug
 
 mixin table-app(options) 
-  -const {title, subtitle, tabHeaders, rowsArr} = options || {};
+  -const {title, subtitle, tabHeaders, rowsArr, showOnPage} = options || {};
   .table-card 
     .table-card__header 
       .table-card__header__col
@@ -27,8 +28,12 @@ mixin table-app(options)
                 -const buttonTitle = col ? 'Active' : 'Inactive';
                 if typeof col == 'boolean'
                   td 
-                    button.table-app__button(class=col ? 'active' : null)= buttonTitle
+                    button.table-app__button(class=col ? 'active' : null)
+                      span= buttonTitle
 
                 else
                   td= col
       .table-card__content-padding
+    .table-card__bottom
+      span.table-card__info Showing data 1 to #{showOnPage} of  256K entries
+      +pagination({min: 4, max: 40})
