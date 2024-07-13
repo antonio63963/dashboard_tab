@@ -1,16 +1,24 @@
 .sidebar {
+  position: relative;
   padding: 36px clamp(20px, 2.8rem, 28px);
   padding-bottom: 76px;
   width: 306px;
   min-width: 306px;
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   background-color: var(--color-white);
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 
   .sidebar__header {
     margin-bottom: 54px;
+
+    .sidebar__close {
+      display: none;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
   }
 
   .sidebar__topics-item {
@@ -47,10 +55,18 @@
 }
 @media screen and (max-width: 1100px) {
   .sidebar {
-    /* transform: translateX(); */
     position: absolute;
     z-index: 20;
     box-shadow: var(--shadow);
     left: -310px;
+
+    .sidebar__header {
+      .sidebar__close {
+        display: block;
+      }
+    }
+  }
+  .sidebar.opened {
+    left: 0;
   }
 }

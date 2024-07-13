@@ -1,4 +1,5 @@
 .page-content {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -45,12 +46,20 @@
 
 @media screen and (max-width: 1100px) {
   .page-content {
-    /* align-items: center; */
-
+    padding-top: 120px;
     .page-content__top {
+      width: 100%;
+      background-color: var(--color-bg);
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 40px;
+      padding-bottom: 20px;
+      padding-left: 40px;
+      box-shadow: var(--shadow);
+
       .page-content__sandwich {
         display: flex;
-
       }
     }
   }

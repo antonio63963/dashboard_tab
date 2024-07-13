@@ -8,6 +8,8 @@
 @import "../ui/table-app/table-app.css";
 @import "../ui/textField/textField.css";
 @import "../ui/pagination/pagination.css";
+@import "../ui/close-icon/close-icon.css";
+
 * {
   margin: 0;
   padding: 0;

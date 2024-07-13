@@ -1,5 +1,6 @@
 include ../logo/logo.pug
 include ../sidebar-item/sidebar-item.pug
+include ../close-icon/close-icon.pug
 
 mixin sidebar-app 
   - const items = [{title: 'Dashboard', iconPath: 'dashboard.png', isNotPressable: true}, {title: 'Product', iconPath: 'product.png'}, {title: 'Customers', iconPath: 'customers.png'}, {title: 'Income', iconPath: 'income.png'}, {title: 'Promote', iconPath: 'promote.png'}, {title: 'Help', iconPath: 'help.png'},]
@@ -7,6 +8,7 @@ mixin sidebar-app
   aside.sidebar
     .sidebar__header 
       +logo
+      +close-icon(class="sidebar__close")
     ul.sidebar__topics
       each val in items
         +sidebar-item({
