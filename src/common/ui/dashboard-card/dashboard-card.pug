@@ -1,0 +1,21 @@
+include ../textField/textField.pug
+include ../pagination/pagination.pug
+
+mixin dashboard-card(options) 
+  -const {title, subtitle, showOnPage} = options || {};
+  .table-card 
+    .table-card__header 
+      .table-card__header__col
+        h2.table-card__title= title 
+        p.table-card__subtitle= subtitle 
+
+      +text-field({
+        iconPath: 'search.svg',
+        placeholder: 'Search',
+      })(class="table-card__input")
+
+    block
+
+    .table-card__bottom
+      span.table-card__info Showing data 1 to #{showOnPage} of  256K entries
+      +pagination({min: 4, max: 40, selected: 1})

@@ -1,0 +1,23 @@
+mixin table(options)
+  -const {tabHeaders, rowsArr} = options || {};
+  .table-card__content
+      .table-card__content-padding
+      table(class!= attributes.class)
+        thead 
+          tr.move-up
+            each val in tabHeaders 
+              th= val
+        tbody 
+          each row in rowsArr 
+            tr.move-up
+              - const values = Object.values(row)
+              each col in values 
+                -const buttonTitle = col ? 'Active' : 'Inactive';
+                if typeof col == 'boolean'
+                  td 
+                    button.table-app__button(class=col ? 'active' : null)
+                      span= buttonTitle
+
+                else
+                  td= col
+      .table-card__content-padding

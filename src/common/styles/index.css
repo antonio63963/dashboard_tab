@@ -5,10 +5,11 @@
 @import "../ui/sidebar/sidebar.css";
 @import "../ui/page-content/page-content.css";
 @import "../ui/sidebar-item/sidebar-item.css";
-@import "../ui/table-app/table-app.css";
+@import "../ui/dashboard-card/dashboard-card.css";
 @import "../ui/textField/textField.css";
 @import "../ui/pagination/pagination.css";
 @import "../ui/close-icon/close-icon.css";
+@import "../ui/table/table.css";
 
 * {
   margin: 0;

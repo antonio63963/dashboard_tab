@@ -1,6 +1,6 @@
 import "./common/styles/index.css";
 import "./common/ui/sidebar/sidebar.js";
-import "./common/ui/table-app/table-app.js";
+import "./common/ui/table/table.js";
 
 const sandwich = document.querySelector(".page-content__sandwich");
 const sidebar = document.querySelector(".sidebar");

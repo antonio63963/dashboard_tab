@@ -6,10 +6,12 @@ mixin paginationArrowButton(isForward = false)
 
 
 mixin pagination(options)
-  -const {min, max} = options || {};
+  -const {min, max, selected} = options || {};
   .pagination(class!= attributes.class)
     +paginationArrowButton()(class="pagination__back") 
     - for (var x = 1; x<=min; x++) 
+      if x == selected
+        .pagination__nav(class="active")= x
       .pagination__nav= x
     if min < max 
       span.pagination__dots ...
