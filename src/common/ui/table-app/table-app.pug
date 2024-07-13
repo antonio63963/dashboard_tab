@@ -17,12 +17,12 @@ mixin table-app(options)
       .table-card__content-padding
       table(class!= attributes.class)
         thead 
-          tr
+          tr.move-up
             each val in tabHeaders 
               th= val
         tbody 
           each row in rowsArr 
-            tr 
+            tr.move-up
               - const values = Object.values(row)
               each col in values 
                 -const buttonTitle = col ? 'Active' : 'Inactive';

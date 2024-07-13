@@ -32,7 +32,7 @@
     width: 100%;
     max-width: 100%;
     overflow-x: auto;
-    text-overflow: ellipsis;
+    overflow-y: hidden;
 
     display: flex;
     justify-content: flex-start;
@@ -107,7 +107,7 @@ td:last-child {
 tr {
   border: 1px solid var(--color-gray-xl);
   border-width: 0 0 1px 0;
-  transition: all .3s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 tr:hover {
   background-color: var(--color-bg);
@@ -138,6 +138,14 @@ tr:hover {
 .table-app__button:hover {
   opacity: 0.5;
 }
+
+/* animation */
+.move-up {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+/* Media */
 
 @media screen and (max-width: 576px) {
   .table-card {
